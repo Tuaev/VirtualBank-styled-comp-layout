@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Virtual Bank",
+  "name": "Virtual Bank | Styled-Components",
   "icons": [
     {
       "src": "favicon.ico",
