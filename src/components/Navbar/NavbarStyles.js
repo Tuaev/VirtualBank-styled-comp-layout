@@ -3,9 +3,9 @@ import { Link as RouterLink } from 'react-router-dom';
 import { Link as ScrollLink } from 'react-scroll';
 
 export const Nav = styled.nav`
-  background: #000;
+  background-color: ${({ scrollNav }) => (scrollNav ? '#000' : 'transparent')};
   height: 80px;
-  margin-top: -40px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,6 +16,10 @@ export const Nav = styled.nav`
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin-top: -140px;
   }
 `;
 
